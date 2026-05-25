@@ -1,0 +1,54 @@
+:root {
+  --ifm-color-primary: #c0392b;
+  --ifm-color-primary-dark: #a93226;
+  --ifm-color-primary-darker: #9d2e23;
+  --ifm-color-primary-darkest: #82261d;
+  --ifm-color-primary-light: #cd4030;
+  --ifm-color-primary-lighter: #d14535;
+  --ifm-color-primary-lightest: #d9574a;
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #e74c3c;
+  --ifm-color-primary-dark: #e43725;
+  --ifm-color-primary-darker: #d93420;
+  --ifm-color-primary-darkest: #b22b1a;
+  --ifm-color-primary-light: #ea6153;
+  --ifm-color-primary-lighter: #ec6c5e;
+  --ifm-color-primary-lightest: #f08b82;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.tier-1 { background: #c0392b; color: #fff; }
+.tier-2 { background: #e67e22; color: #fff; }
+.tier-3 { background: #2980b9; color: #fff; }
+.tier-4 { background: #27ae60; color: #fff; }
+
+.documented { color: #27ae60; font-weight: 700; }
+.inferred { color: #2980b9; font-weight: 700; }
+
+.case-meta {
+  background: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 0 6px 6px 0;
+}
+
+article img {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  margin: 24px auto;
+  display: block;
+  max-width: 100%;
+}
