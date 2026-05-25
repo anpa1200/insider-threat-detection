@@ -40,7 +40,8 @@ const config = {
           {label: 'Insider Threat Detection', href: 'https://anpa1200.github.io/insider-threat-detection/'}
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
-        {href: 'https://github.com/anpa1200/insider-threat-detection', label: 'GitHub', position: 'right'}
+        {href: 'https://github.com/anpa1200/insider-threat-detection', label: 'GitHub', position: 'right'},
+        {href: 'https://anpa1200.github.io/', label: 'Portfolio', position: 'right', className: 'navbar-portfolio-btn'}
       ]
     },
     footer: {
