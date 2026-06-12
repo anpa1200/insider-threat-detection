@@ -6,6 +6,8 @@ sidebar_position: 1
 
 # Detecting Malicious Insider Activity: A Technical Detection Engineering Guide
 
+For ATT&CK mapping, coverage-gap analysis, and detection-backlog handoff across this research, use the [ThreatMapper AI CTI workbench](https://1200km.com/threatmapper/).
+
 > Detection logic, case evidence from 14 documented incidents, and a four-phase implementation programme — covering deterministic rules, behavioural heuristics, UEBA, exfiltration path coverage, and the telemetry required before any of it works.
 
 ![Hero infographic](/img/img-01-hero.png)
