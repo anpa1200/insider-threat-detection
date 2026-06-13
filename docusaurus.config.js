@@ -45,6 +45,13 @@ const config = {
     ]
   ],
   themeConfig: {
+    image: 'img/logo.png',
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'insider threat detection, insider threat program, UEBA, behavioral analytics, data exfiltration detection, privileged user monitoring, SIEM detection rules, 14 insider threat cases, Manning, Snowden, detection engineering, CERT insider threat',
+      },
+    ],
     navbar: {
       title: 'Insider Threat Detection',
       logo: {
