@@ -1,6 +1,22 @@
 // @ts-check
+const {execFileSync} = require('node:child_process');
+
+function gitLastModifiedDate(relativePath) {
+  try {
+    const value = execFileSync('git', ['log', '-1', '--format=%cs', '--', relativePath], {
+      cwd: __dirname,
+      encoding: 'utf8',
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+const homepageLastmod = gitLastModifiedDate('src/pages/index.js');
+
 const config = {
-  title: 'Insider Threat Detection',
+  title: '1200km',
   tagline: 'Detection logic, 14 documented cases, telemetry requirements, and a four-phase implementation programme for detecting malicious insider activity.',
   favicon: 'img/logo.png',
   url: 'https://1200km.com',
@@ -13,23 +29,38 @@ const config = {
   onBrokenLinks: 'throw',
   markdown: {hooks: {onBrokenMarkdownLinks: 'warn'}},
   i18n: {defaultLocale: 'en', locales: ['en']},
+  plugins: ['./seo-metadata-plugin.cjs'],
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/anpa1200/insider-threat-detection/tree/main/'
+          editUrl: 'https://github.com/anpa1200/insider-threat-detection/tree/main/',
+          showLastUpdateTime: true,
         },
         blog: false,
+        sitemap: {
+          lastmod: 'date',
+          createSitemapItems: async ({defaultCreateSitemapItems, ...params}) => {
+            const items = await defaultCreateSitemapItems(params);
+            return items.map((item) => item.url === 'https://1200km.com/insider-threat-detection/' && homepageLastmod
+              ? {...item, lastmod: item.lastmod || homepageLastmod}
+              : item);
+          },
+        },
         gtag: {trackingID: 'G-TMTG21RVHM', anonymizeIP: true},
         theme: {customCss: './src/css/custom.css'}
       }
     ]
   ],
   themeConfig: {
-    image: 'img/logo.png',
+    image: 'img/img-01-hero.png',
     metadata: [
+      {
+        property: 'og:site_name',
+        content: '1200km — Andrey Pautov Security Research',
+      },
       {
         name: 'keywords',
         content: 'insider threat detection, insider threat program, UEBA, behavioral analytics, data exfiltration detection, privileged user monitoring, SIEM detection rules, 14 insider threat cases, Manning, Snowden, detection engineering, CERT insider threat',
@@ -53,7 +84,7 @@ const config = {
             {label: 'Customer-Driven AI CTI', href: 'https://1200km.com/customer-driven-ai-cti-project/'},
             {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
             {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
-            {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+            {label: 'HexStrike AI (upstream project)', href: 'https://github.com/0x4m4/hexstrike-ai'},
             {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'},
           ],
         },

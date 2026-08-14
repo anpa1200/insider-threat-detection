@@ -1,16 +1,20 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
+
+const PROJECT_TITLE = 'Insider Threat Detection';
+const PAGE_DESCRIPTION = 'Build a defensible insider-risk program with 14 documented cases, tiered detection logic, required telemetry, legal constraints, and phased implementation.';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h1 className="hero__title">{PROJECT_TITLE}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
@@ -41,10 +45,26 @@ const features = [
   },
 ];
 
+const breadcrumbStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {'@type': 'ListItem', position: 1, name: '1200km', item: 'https://1200km.com/'},
+    {'@type': 'ListItem', position: 2, name: 'Insider Threat Detection', item: 'https://1200km.com/insider-threat-detection/'},
+  ],
+};
+
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+    <Layout
+      title={PROJECT_TITLE}
+      description={PAGE_DESCRIPTION}
+    >
+      <Head>
+        <meta name="twitter:title" content={`${PROJECT_TITLE} | 1200km`} />
+        <meta name="twitter:description" content={PAGE_DESCRIPTION} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbStructuredData)}</script>
+      </Head>
       <HomepageHeader />
       <main>
         <section style={{padding: '48px 0'}}>
