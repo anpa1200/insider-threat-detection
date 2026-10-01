@@ -1,0 +1,258 @@
+{
+  "prefix": "/insider-threat-detection/",
+  "pages": {
+    "/insider-threat-detection/": {
+      "classification": "Priority",
+      "reason": "Substantive practitioner content or established navigation entry point",
+      "word_count": 126,
+      "title": "Insider Threat Detection | 1200km",
+      "description": "Build a defensible insider-risk program with 14 documented cases, tiered detection logic, required telemetry, legal constraints, and phased implementation."
+    },
+    "/insider-threat-detection/docs/case-studies/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 277,
+      "title": "3 · Documented Case Studies | 1200km",
+      "description": "Compare 14 incidents using primary records, with consistent notes on what happened, retrospective signals, missed opportunities, triggers, and lessons."
+    },
+    "/insider-threat-detection/docs/case-studies/barile/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 369,
+      "title": "3.14 · Juliana Barile | 1200km",
+      "description": "Analyze destructive post-termination access at a New York credit union, with retained credentials, deleted data, delayed discovery and prevention lessons."
+    },
+    "/insider-threat-detection/docs/case-studies/desjardins/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 356,
+      "title": "3.11 · Desjardins Group | 1200km",
+      "description": "Review prolonged data exfiltration at a Canadian financial group, the monitoring gaps it crossed, and the police notification that exposed the incident."
+    },
+    "/insider-threat-detection/docs/case-studies/duronio/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 265,
+      "title": "3.3 · Roger Duronio — Insider Threats | 1200km",
+      "description": "Study a disgruntled administrator's logic-bomb sabotage at UBS, the precursor access and code signals, and the destructive system event that exposed it."
+    },
+    "/insider-threat-detection/docs/case-studies/kvashuk/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 267,
+      "title": "3.10 · Volodymyr Kvashuk | 1200km",
+      "description": "Analyze Microsoft's test-environment gift-card fraud, how access enabled the scheme, and why unusual redemption activity became the decisive detection signal."
+    },
+    "/insider-threat-detection/docs/case-studies/levandowski/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 284,
+      "title": "3.4 · Anthony Levandowski | 1200km",
+      "description": "Trace large-scale Waymo intellectual-property downloads before departure, retrospective access signals, and civil discovery that revealed the transfer."
+    },
+    "/insider-threat-detection/docs/case-studies/manning/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 232,
+      "title": "3.1 · Chelsea Manning | 1200km",
+      "description": "Examine mass classified-data exfiltration at the US Army, the access and removable-media signals visible in retrospect, and why a human tip triggered discovery."
+    },
+    "/insider-threat-detection/docs/case-studies/ramesh/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 295,
+      "title": "3.5 · Sudhish Kasaba Ramesh | 1200km",
+      "description": "Analyze post-termination access to Cisco cloud infrastructure, the destructive actions that caused a service outage, and controls that could reduce recurrence."
+    },
+    "/insider-threat-detection/docs/case-studies/ruiz/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 260,
+      "title": "3.8 · Reyes Daniel Ruiz | 1200km",
+      "description": "Study a Yahoo engineer's misuse of access, the account activity that drew employer attention, and monitoring lessons for privileged application roles."
+    },
+    "/insider-threat-detection/docs/case-studies/sharp/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 327,
+      "title": "3.9 · Nickolas Sharp — Insider Threats | 1200km",
+      "description": "Trace data theft and extortion at Ubiquiti, including cloud access, log manipulation, and VPN failure that exposed a residential address in audit records."
+    },
+    "/insider-threat-detection/docs/case-studies/skelton/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 302,
+      "title": "3.7 · Andrew Skelton — Insider Threats | 1200km",
+      "description": "Examine a Morrisons payroll-data leak by a disgruntled auditor, including authorized access, exfiltration signals, and external contact before publication."
+    },
+    "/insider-threat-detection/docs/case-studies/snowden/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 268,
+      "title": "3.2 · Edward Snowden — Insider Threats | 1200km",
+      "description": "Review an NSA contractor data-exfiltration incident, with privileged access, collection patterns, missed signals and publication as the external trigger."
+    },
+    "/insider-threat-detection/docs/case-studies/tesla/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 239,
+      "title": "3.12 · Tesla — Insider Threats | 1200km",
+      "description": "Examine a 100 GB data leak attributed to former employees, the access and transfer signals available, and journalist contact that triggered discovery."
+    },
+    "/insider-threat-detection/docs/case-studies/twitter/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 333,
+      "title": "3.13 · Twitter / Saudi Arabia | 1200km",
+      "description": "Study state-linked misuse of social-media access, the suspicious account activity management noticed, and safeguards for high-trust internal user tools."
+    },
+    "/insider-threat-detection/docs/case-studies/zheng/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 290,
+      "title": "3.6 · Xiaoqing Zheng — Insider Threats | 1200km",
+      "description": "Review theft of GE Aviation turbine designs, the concealment and transfer behaviors visible in retrospect, and the external referral that prompted action."
+    },
+    "/insider-threat-detection/docs/conclusion/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 571,
+      "title": "9 · Conclusion and Coverage Gaps | 1200km",
+      "description": "Assess the persistent gap between technical monitoring and how real incidents are discovered, then use layered controls without claiming prevention."
+    },
+    "/insider-threat-detection/docs/detection-methods/": {
+      "classification": "Thin",
+      "reason": "Short supporting page under 300 measured main-content words; retain content and URL",
+      "word_count": 209,
+      "title": "4 · Detection Methods | 1200km",
+      "description": "Implement defender-operable controls tied to evidence, with explicit labels for engineering inference and requirements for local testing and tuning."
+    },
+    "/insider-threat-detection/docs/detection-methods/behavioural-heuristics/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 875,
+      "title": "4.2 · Behavioural Heuristics | 1200km",
+      "description": "Detect authorized but abnormal activity with tuned baselines for volume, timing, access breadth and peer deviation while managing expected false positives."
+    },
+    "/insider-threat-detection/docs/detection-methods/covering-tracks/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 374,
+      "title": "4.7 · Covering-Tracks Detection | 1200km",
+      "description": "Detect audit-log deletion, logging disablement, and other evidence-removal behavior to preserve forensic trails and gain a second opportunity for response."
+    },
+    "/insider-threat-detection/docs/detection-methods/deterministic-rules/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 1160,
+      "title": "4.1 · Deterministic Rules | 1200km",
+      "description": "Deploy high-signal controls for rare patterns, with terminated-account access and privileged changes, before investing in baseline-dependent analytics."
+    },
+    "/insider-threat-detection/docs/detection-methods/exfiltration-paths/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 517,
+      "title": "4.4 · Exfiltration Path Coverage | 1200km",
+      "description": "Cover email, cloud storage, removable media, repositories, printing, and other meaningful data-loss routes instead of relying on email DLP alone."
+    },
+    "/insider-threat-detection/docs/detection-methods/identity-privilege/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 511,
+      "title": "4.3 · Identity and Privilege Anomalies | 1200km",
+      "description": "Review admin account creation, privilege escalation and unusual access changes, using approved-service exceptions and context to guide investigation."
+    },
+    "/insider-threat-detection/docs/detection-methods/sabotage-signals/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 421,
+      "title": "4.5 · Sabotage Signals | 1200km",
+      "description": "Monitor control-plane changes, bulk deletion, destructive commands, and safety-control weakening separately from ordinary file and email access analytics."
+    },
+    "/insider-threat-detection/docs/detection-methods/ueba-anomaly/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 595,
+      "title": "4.6 · UEBA and Anomaly Models | 1200km",
+      "description": "Use converging weak signals to support insider-risk review, treating unusual authorized behavior as context alongside precise rules and analyst judgment."
+    },
+    "/insider-threat-detection/docs/implementation/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 752,
+      "title": "8 · Implementation Guidance | 1200km",
+      "description": "Plan insider-threat detection in four phases, beginning with authority and telemetry before adding high-value rules, baselines and graph-based methods."
+    },
+    "/insider-threat-detection/docs/intro/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 420,
+      "title": "Introduction — Insider Threats | 1200km",
+      "description": "Use an evidence-labeled guide for malicious insider activity, covering documented incidents, telemetry, detection logic, privacy, and deployment limits."
+    },
+    "/insider-threat-detection/docs/legal-privacy/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 666,
+      "title": "7 · Legal and Privacy Constraints | 1200km",
+      "description": "Plan employee monitoring around legal authority, privacy and proportionality, document its purpose and obtain qualified legal advice before deployment."
+    },
+    "/insider-threat-detection/docs/priority-matrix/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 562,
+      "title": "5 · Detection Priority Matrix | 1200km",
+      "description": "Prioritize controls by realistic implementation effort and coverage, starting with high-signal events already before adding complex behavioral models."
+    },
+    "/insider-threat-detection/docs/references/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 727,
+      "title": "10 · References — Insider Threats | 1200km",
+      "description": "Verify the guide's claims through cited DOJ releases, court records, regulatory findings, government research and clearly identified supplementary sources."
+    },
+    "/insider-threat-detection/docs/required-telemetry/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 504,
+      "title": "6 · Required Telemetry | 1200km",
+      "description": "Collect and retain the identity, endpoint, cloud, data-access, HR, and control-plane records required by the guide's rules and behavioral analytics."
+    },
+    "/insider-threat-detection/docs/taxonomy/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 425,
+      "title": "2 · Taxonomy and Kill Chain | 1200km",
+      "description": "Classify intentional, accidental, and credential-compromise scenarios, then map harmful employee activity through a practical six-phase kill chain."
+    },
+    "/insider-threat-detection/docs/why-harder/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 588,
+      "title": "1 · Why Insider Detection Is Structurally Harder | 1200km",
+      "description": "Understand why valid access, organizational knowledge and normal-looking actions make harmful employee behavior harder to distinguish from legitimate work."
+    }
+  },
+  "gitHistory": true,
+  "person": {
+    "@type": "Person",
+    "@id": "https://1200km.com/#person",
+    "name": "Andrey Pautov",
+    "url": "https://1200km.com/",
+    "sameAs": [
+      "https://github.com/anpa1200",
+      "https://medium.com/@1200km",
+      "https://www.linkedin.com/in/andrey-pautov/",
+      "https://infosecwriteups.com/@1200km"
+    ]
+  },
+  "website": {
+    "@type": "WebSite",
+    "@id": "https://1200km.com/#website",
+    "url": "https://1200km.com/",
+    "name": "1200km Security Research",
+    "publisher": {
+      "@id": "https://1200km.com/#person"
+    }
+  }
+}

@@ -1,3 +1,4 @@
+const technicalPolicy = require('./src/theme/Root/seo-policy.json');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -88,7 +89,9 @@ module.exports = function seoMetadataPlugin(context) {
           fs.writeFileSync(file, html);
           continue;
         }
-        const description = metadata.descriptions[pathname];
+        const technicalEntry = technicalPolicy.pages[pathname];
+        if (technicalEntry?.classification === 'Thin') { seenPaths.add(pathname); continue; }
+        const description = technicalEntry?.description || metadata.descriptions[pathname];
         if (!description) throw new Error(`Missing authored SEO description for ${pathname}`);
 
         const titleMatch = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
@@ -100,8 +103,8 @@ module.exports = function seoMetadataPlugin(context) {
         }
         const pageTitle = title.slice(0, -TITLE_SUFFIX.length).trim();
 
-        if (description.length < 140 || description.length > 160) {
-          throw new Error(`Description length ${description.length} is outside 140–160 for ${pathname}`);
+        if (technicalEntry?.classification !== 'Thin' && (description.length < 120 || description.length > 155)) {
+          throw new Error(`Description length ${description.length} is outside 120–155 for ${pathname}`);
         }
         if (description.toLocaleLowerCase('en').includes(pageTitle.toLocaleLowerCase('en'))) {
           throw new Error(`Description contains the page title verbatim for ${pathname}`);

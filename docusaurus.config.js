@@ -1,3 +1,4 @@
+const applyTechnicalSitemap = require('./technical-seo-sitemap.cjs');
 // @ts-check
 const {execFileSync} = require('node:child_process');
 
@@ -29,7 +30,7 @@ const config = {
   onBrokenLinks: 'throw',
   markdown: {hooks: {onBrokenMarkdownLinks: 'warn'}},
   i18n: {defaultLocale: 'en', locales: ['en']},
-  plugins: ['./seo-metadata-plugin.cjs'],
+  plugins: ['./technical-seo-plugin.cjs', './seo-metadata-plugin.cjs'],
   presets: [
     [
       'classic',
@@ -123,4 +124,5 @@ const config = {
     }
   }
 };
+applyTechnicalSitemap(config);
 module.exports = config;
